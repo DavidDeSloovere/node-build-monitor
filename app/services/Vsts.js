@@ -96,7 +96,7 @@ module.exports = function () {
 
                 callback(error, builds);
             });
-        }
+        },
         queryBuilds = function (callback) {
             if (self.configuration.definitionIds.length === 0) {
                 makeRequest(makeUrl('definitions', ''), function (error, body) {
